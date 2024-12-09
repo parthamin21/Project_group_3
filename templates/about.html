@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            color: #343a40;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar .nav-link {
+            color: #ffffff !important;
+        }
+        .navbar .nav-link:hover {
+            color: #ffd700 !important;
+        }
+        h1, h2 {
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        footer {
+            background-color: #343a40;
+            color: #f8f9fa;
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.03);
+        }
+        .card-title {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Group 3</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/data">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center">About the Dataset</h1>
+        <p class="text-center">
+            This dataset contains medical data used to analyze and predict diabetes outcomes. Below is a detailed description of each variable in the dataset.
+        </p>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pregnancies</h5>
+                        <p class="card-text">
+                            Number of times the patient has been pregnant.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Glucose</h5>
+                        <p class="card-text">
+                            Plasma glucose concentration (mg/dL) from a 2-hour oral glucose tolerance test.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">BloodPressure</h5>
+                        <p class="card-text">
+                            Diastolic blood pressure (mm Hg), an important measure of cardiovascular health.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">SkinThickness</h5>
+                        <p class="card-text">
+                            Thickness of the triceps skinfold (mm), used to estimate body fat percentage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Insulin</h5>
+                        <p class="card-text">
+                            2-hour serum insulin level (µU/mL), indicating insulin resistance or beta-cell function.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">BMI</h5>
+                        <p class="card-text">
+                            Body Mass Index (kg/m²), a measure of obesity and an important diabetes risk factor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">DiabetesPedigreeFunction</h5>
+                        <p class="card-text">
+                            A function that estimates the genetic predisposition for diabetes based on family history.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Age</h5>
+                        <p class="card-text">
+                            Age of the patient (years). Older individuals have a higher risk of diabetes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Outcome</h5>
+                        <p class="card-text">
+                            Binary outcome variable: 1 = Diabetes, 0 = No Diabetes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5 py-3">
+        <p>© 2024 DAB111 Group Project | All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
